@@ -4,21 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
     android:gravity="center"
-    tools:context=".OtherActivity">
+    android:padding="20dp"
+    tools:context=".MessageActivity">
 
     <TextView
-        android:id="@+id/otherTxt"
+        android:id="@+id/messageTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="다른 화면임"/>
-
-    <Button
-        android:id="@+id/otherBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="이전 화면으로 돌아가기"/>
-
+        android:text="전달받은 내용"/>
 </LinearLayout>

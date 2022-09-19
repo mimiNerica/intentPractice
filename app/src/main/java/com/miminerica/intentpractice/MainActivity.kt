@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_message.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,15 @@ class MainActivity : AppCompatActivity() {
 
             val myIntent = Intent(this,OtherActivity::class.java)
             startActivity(myIntent)
+        }
+
+        messageBtn.setOnClickListener {
+            val myIntent = Intent(this, MessageActivity::class.java)
+            val inputMsg = messageTxt.text.toString()
+
+            myIntent.putExtra("msg", inputMsg)
+
+            startActivity()
 
         }
     }
